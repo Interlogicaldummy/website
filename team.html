@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interlogical Team Page</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <style>
+    h2 {
+      color: #ccc;
+    }
+
+    h2.toptitle {
+      margin-left: 2vw;
+      padding-top: 2vw;
+    }
+
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+      height: 37em;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+      opacity: 0.75;
+      height: 37em;
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+        height: auto;
+      }
+      .card{
+        height: auto;
+      }
+    }
+    @media screen and (min-width: 950px){
+      .column {
+        width: 25%;
+        display: block;
+        height: auto;
+      }
+      .card{
+        height: 37em;
+      }
+    }
+    @media screen and (min-width: 1425px){
+      .column {
+        width: calc(100% / 6);
+        display: block;
+        height: auto;
+      }
+      .card{
+        height: 37em;
+      }
+    }
+    @media screen and (min-width: 2075px){
+      .card{
+        height: 67em;
+      }
+      p{
+        font-size: 2em;
+      }
+      .toptitle{
+        font-size: 2em;
+      }
+    }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <img class="logo" src="logo.png" alt="Logo">
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fa fa-home"></i>  Home</a></li>
+          <li class="sub-menu"><a class="presentpage"><i class="fa fa-info-circle"></i> About</a>
+            <ul>
+              <li><a class="presentpage"><i class="fa fa-users"></i> Team</a></li>
+              <li><a href="product.html"><i class="fas fa-chess-board"></i> Product</a></li>
+              <li><a href="#"><i class="far fa-newspaper"></i> News</a></li>
+            </ul>
+          </li>
+          <li><a href="https://interlogical-ye.000webhostapp.com/contact.php"><i class="fa fa-phone"></i> Contact</a></li>
+          <li class="sub-menu"><a><img class="ye" src="ye.png" alt="YE Logo">   Young Enterprise</a>
+            <ul>
+              <li><a href="https://www.young-enterprise.org.uk/"><img class="ye" src="ye.png" alt="YE Logo">   Young Enterprise</a></li>
+              <li><a href="#"><i class="fas fa-shopping-basket"></i> YE Marketplace</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-download"></i> App Download</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fa fa-bars" aria-hidden="true" onclick="toggleClass(this)"></i>
+      </div>
+    </header>
+
+    <h2 class="toptitle">Meet The Team</h2>
+    <br>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="maleicon.png" alt="Hugo Sampaio" style="width:100%">
+          <div class="container">
+            <h2>Hugo Sampaio</h2>
+            <p class="title">Managing Director</p>
+            <p>I'm a young entrepreneur with experience in a busness environment already, as I am a part-time waiter, as well as a member of the Air Cadets. From a young age I have been bilingual - with portuguese being my main language.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="maleicon.png" alt="Toby Sharman" style="width:100%">
+          <div class="container">
+            <h2>Toby Sharman</h2>
+            <p class="title">Finance Director</p>
+            <p>I saw YE as an exciting opportunity to learn about business and so with my natural talent for maths I became the Finance Director. Other than this, I have completed Bronze Duke of Edingburgh and I am doing Silver as well as playing golf.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="maleicon.png" alt="Adam Rippon" style="width:100%">
+          <div class="container">
+            <h2>Adam Rippon</h2>
+            <p class="title">Marketing Director</p>
+            <p>Young Enterprise is a great experience for me as I have skills in working with a team and an understanding of how to market products; this will also teach me about different aspects of business. I learnt to work in a team through my time playing football.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="maleicon.png" alt="Thomas Evans" style="width:100%">
+          <div class="container">
+            <h2>Thomas Evans</h2>
+            <p class="title">Sales Director</p>
+            <p>I am a young ambitious student, who has experience in a team from playing football as a centre back. From my time working with animals I am used to hard work and don't mind working when it is tough.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="maleicon.png" alt="Ewan Frew" style="width:100%">
+          <div class="container">
+            <h2>Ewan Frew</h2>
+            <p class="title">Operations Director</p>
+            <p>I am often busy with extra-curricular activities - as I swim, play football and play the drums. I am Scottish and a young engineer, though I'm a bit of a perfectionist so operations and manufacturing were best suited for me.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="maleicon.png" alt="Ben Ball" style="width:100%">
+          <div class="container">
+            <h2>Ben Ball</h2>
+            <p class="title">Human Resources Director</p>
+            <p>Human Resources was the perfect job for me as I have lots of friends and get along with everyone but I'm not afraid to say when someone is in the wrong and sort them out. I play rugby and am a perseverant engineer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="maleicon.png" alt="Raees Haiy" style="width:100%">
+          <div class="container">
+            <h2>Raees Haiy</h2>
+            <p class="title">Digital & Technology Director</p>
+            <p>I'm the digital and technology of Interlogical, and I am responsiblefor creating the augmented reality app, the board, card design and game mechanics. My main hobbies are programming of all sorts and badminton.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="maleicon.png" alt="Ben Skipper" style="width:100%">
+          <div class="container">
+            <h2>Ben Skipper</h2>
+            <p class="title">Sustainability Director</p>
+            <p>I like cycling - including motor cycling, which I hope to learn to do soon - and I'm a new buzzing entrepreneur as well as a hard-woking student and Sustainability Director. I work hard and do business at school so this was a great opportunity for me.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="femaleicon.png" alt="Lily Lowrie" style="width:100%">
+          <div class="container">
+            <h2>Lilliana Lowrie</h2>
+            <p class="title">Company Secretary (Director)</p>
+            <p>I'm a kind, hard-working student and play netball out of school. Being secretary was my first choice because it was a job I saw myself being able to do well as I am good at time management and keeping all the records sorted.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="maleicon.png" alt="Dom O'Connell" style="width:100%">
+          <div class="container">
+            <h2>Dom O'Connell</h2>
+            <p class="title">Manufacturing Director</p>
+            <p>Personally I see myself as being hard-working and believe myself to be an avid car enthusiast. I'm very good at playing the guitar and I am a talented engineer so Manufacturing Director was a perfect job role for me.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="maleicon.png" alt="Matthew Vallance" style="width:100%">
+          <div class="container">
+            <h2>Matthew Vallance</h2>
+            <p class="title">Utility Director</p>
+            <p>I'm a hard working student and employee at my part-time job, which means I have experience in the corporate world and an understanding of how to aquire raw materlials. Rugby is my favourite sport and I enjoy playing it.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="maleicon.png" alt="Kyle Morrison" style="width:100%">
+          <div class="container">
+            <h2>Kyle Morrison</h2>
+            <p class="title">Research Director</p>
+            <p>I enjoy modelling and I am a member of the Air Cadets, I work hard and I am a well rounded student. I am Scottish. I have experience with technolgy and I am capable of sustaining the socil media as well as bringing new consumers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="social_icon_footer">
+      <div class="container">
+        <div class="text-center center-block">
+          <p><b>Disclaimer:</b> We use a third party service as a directory to our social media accounts. <br> You will be routed to a urlgenius page and then to whatever medium is best suited for your device.</p>
+          <a href="#"><i id="social-fb" class="fab fa-facebook-square fa-3x social"></i></a>
+          <a href="#"><i id="social-tw" class="fab fa-twitter-square fa-3x social"></i></a>
+          <a href="https://urlgeni.us/instagram/Interlogical"><i id="social-ig" class="fab fa-instagram fa-3x social"></i></a>
+          <a href="#"><i id="social-yt" class="fab fa-youtube fa-3x social"></i></a>
+          <a href="#"><i id="social-sc" class="fab fa-snapchat-square fa-3x social"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js.js"></script>
+
+  </body>
+</html>
