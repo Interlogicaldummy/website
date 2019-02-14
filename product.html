@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interlogical Home page</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href='https://use.fontawesome.com/releases/v5.6.3/css/all.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <style>
+    body {
+      padding-top: 50px;
+    }
+
+    #about {
+      background: white;
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      width: 100%;
+      min-height: 55%;
+    }
+
+    #about-img {
+      background-image: url(pbgt.png);
+      width: 60%;
+      background-attachment: fixed;
+      background-size: cover;
+      min-height: 55%;
+    }
+
+    #quote {
+      display: none;
+    }
+
+    #about-content {
+      background: white;
+      padding: 10vh 3vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 50%;
+    }
+
+    #about-content p {
+      font-size: 18px;
+      font-family: 'Roboto', sans-serif;
+      text-align: justify;
+      text-justify: inter-character;
+      color: #111;
+    }
+
+    #services {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 30px;
+    }
+
+    #our-services {
+      text-align: center;
+      background: white;
+      align-self: center;
+      padding: 20px 60px;
+      margin: 40px;
+      margin-top: 70px;
+      font-size: 28px;
+      font-weight: bolder;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .service {
+      background: white;
+      border-radius: 2px;
+      font-family: 'Roboto', sans-serif;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      padding: 30px;
+      margin: 10px;
+      width: 70vw;
+      height: auto;
+      transition: all ease-in-out 0.2s;
+    }
+
+    #service {
+      align-self: flex-end;
+    }
+
+    .image {
+      width: 45%;
+    }
+
+    .image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+    }
+
+    .content {
+      width: 45%;
+      height: auto;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+
+    .content h2 {
+      font-size: 30px;
+    }
+
+    @media screen and (max-width: 900px) {
+      #about-content {
+        width: 100%;
+      }
+      #about-content p {
+        font-size: 16px;
+      }
+      #our-services {
+        font-size: 26px;
+      }
+      .service {
+        width: 80vw;
+      }
+      .content {
+        width: 50%;
+      }
+      .content h2 {
+        font-size: 24px;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      #about {
+        flex-direction: column-reverse;
+        width: 100%;
+      }
+      #about-img {
+        width: 100%;
+        height: 400px;
+        display: flex;
+      }
+      #quote {
+        align-self: center;
+        display: block;
+        padding: 10px;
+        margin: auto;
+        background: #1F1F1F;
+        width: 80%;
+        min-height: 60px;
+      }
+      #quote p {
+        font-size: 16px;
+        color: #EEE;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        vertical-align: middle;
+        line-height: 25px;
+      }
+      .quote {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      #about-content {
+        box-sizing: border-box;
+      }
+      #about-content p {
+        font-size: 16px;
+      }
+      #service {
+        align-self: center;
+      }
+      #services {
+        align-items: center;
+        padding: 10px;
+      }
+      #our-services {
+        font-size: 22px;
+        padding: 20px;
+        width: 180px;
+      }
+      .service {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 10px;
+        width: 85vw;
+      }
+      .content {
+        width: 100%;
+      }
+      .image {
+        width: 90%;
+        height: auto;
+      }
+      .content h2 {
+        font-size: 22px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      #about-content p {
+        font-size: 1vw;
+      }
+      #our-services {
+        padding: 2vh 2vw;
+        margin: 4vh 4vw;
+        margin-top: 7vh;
+        font-size: 3vw;
+      }
+      .content p {
+        font-size: 1vw;
+      }
+      .content h2 {
+        font-size: 1.5vw;
+      }
+      .service {
+        width: 77.5vw;
+        margin: 3vh;
+      }
+      .temp img{
+        width: 45% !important;
+      }
+    }
+    @media screen and (min-width: 1400px) {
+      body {
+        padding-top: 5vw;
+      }
+    }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <img class="logo" src="logo.png" alt="Logo">
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fa fa-home"></i>  Home</a></li>
+          <li class="sub-menu"><a class="presentpage"><i class="fa fa-info-circle"></i> About</a>
+            <ul>
+              <li><a href="team.html"><i class="fa fa-users"></i> Team</a></li>
+              <li><a class="presentpage"><i class="fas fa-chess-board"></i> Product</a></li>
+              <li><a href="#"><i class="far fa-newspaper"></i> News</a></li>
+            </ul>
+          </li>
+          <li><a href="https://interlogical-ye.000webhostapp.com/contact.php"><i class="fa fa-phone"></i> Contact</a></li>
+          <li class="sub-menu"><a><img class="ye" src="ye.png" alt="YE Logo">   Young Enterprise</a>
+            <ul>
+              <li><a href="https://www.young-enterprise.org.uk/"><img class="ye" src="ye.png" alt="YE Logo">   Young Enterprise</a></li>
+              <li><a href="#"><i class="fas fa-shopping-basket"></i> YE Marketplace</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-download"></i> App Download</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fa fa-bars" aria-hidden="true" onclick="toggleClass(this)"></i>
+      </div>
+    </header>
+
+    <div id="about">
+      <div id="about-img">
+        <div id="quote">
+          <p><br><span class"quote"></span><p>
+        </div>
+      </div>
+      <div id="about-content">
+        <p>The New Frontier is a remake of the classic board game through its use of augmented reality. The New Frontier still has the nostalgic board but without the worry of losing figurines. There is a mobile app to support the reality changing experience, which is suited for both ios and android devices. AR is used to display all the 3D characters and buildings as well as battles and the meteor shooter. The game is based on Jupiter's moon Callisto and entails a battle between different space agencies who want to colonise Callisto.</p>
+      </div>
+    </div>
+    <div id="services">
+      <div id="our-services">The New Frontier</div>
+      <div class="service">
+        <div class="content">
+          <h2>Card scanning</h2>
+          <p>The AR is used to scan all the different cards in order to purchase and place buildings and troops. When the card is scanned, a menu will come up giving you the option of whether or not you want to purchase the item. Once you have purchased the card you can store it in your inventory or tap a sector to place an item in one of your sectors this is done through the build menu. All of these items are augmented onto the board in real time as 3D models.</p>
+        </div>
+        <div class="image temp">
+          <img src="card.png" alt="cards">
+        </div>
+      </div>
+      <div class="service" id="service">
+        <div class="image">
+          <img src="callistoScene.png" alt="sectors">
+        </div>
+        <div class="content">
+          <h2>The sectors</h2>
+          <p>Each player will select a scetor to begin in at the beginning of the game in which they will place their command centre/headquarter. From their starting sectors the players must spread out into adjacent sectors in order to conquer all 76 of the sectors. You can place buildings in sectors to get certain rewards and/or benefits as well as moving troops between adjacent sectors to organise and initiate attacks.</p>
+        </div>
+      </div>
+      <div class="service">
+        <div class="content">
+          <h2>The meteors</h2>
+          <p>Throughout the game there is a random chance of meteors falling on players sectors; dependant on the round the meteors will come more or less often. To defend against the meteorites players must buy defence buildings, e.g. super strong lasers, cruise missles and gravity tractors (to redirect them to your enemies). Players must manually operate the defence - using a crosshair displayed by the AR to aim.</p>
+        </div>
+        <div class="image">
+          <img src="meteor.png" alt="meteor">
+        </div>
+      </div>
+      <div class="service" id="service">
+        <div class="image">
+          <img src="EV&J.png" alt"Other planets">
+        </div>
+        <div class="content">
+          <h2>Other territories</h2>
+          <p>As well as the main map of Callisto there is also other reachable planets and territories that you must travel to with a space craft. You are able to go to: Venus and visit floating islands in its acidic atmosphere; Earth due to it being the original planet with the majority of the human population and asteroids in order to gather resources. There is also the possibility of building huge structures like space elevators and orbital rays to help your colonisation.</p>
+        </div>
+      </div>
+      <div class="service">
+        <div class="content">
+          <h2>Pricing</h2>
+          <p>In order to play the game you must purchase the board for £9.99 but after that it is a smooth flight with the app being free to download for both ios and android devices. With the purchase of the board you will get assemby instructions, the phone stands (4) and cards as well. You won't have to worry about losing charcter tokens or counters as everything is augmented.</p>
+        </div>
+        <div class="image">
+          <img src="cash.png" alt="cash bag">
+        </div>
+      </div>
+    </div>
+
+    <section id="social_icon_footer">
+      <div class="container">
+        <div class="text-center center-block">
+          <p><b>Disclaimer:</b> We use a third party service as a directory to our social media accounts. <br> You will be routed to a urlgenius page and then to whatever medium is best suited for your device.</p>
+          <a href="#"><i id="social-fb" class="fab fa-facebook-square fa-3x social"></i></a>
+          <a href="#"><i id="social-tw" class="fab fa-twitter-square fa-3x social"></i></a>
+          <a href="https://urlgeni.us/instagram/Interlogical"><i id="social-ig" class="fab fa-instagram fa-3x social"></i></a>
+          <a href="#"><i id="social-yt" class="fab fa-youtube fa-3x social"></i></a>
+          <a href="#"><i id="social-sc" class="fab fa-snapchat-square fa-3x social"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js.js"></script>
+
+  </body>
+</html>
