@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interlogical Team Page</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <style>
+    body {
+      background: #999;
+      padding-top: 0;
+    }
+
+    #ios {
+      background-color: #bebebe;
+      height: 100%;
+      padding: auto;
+      float: left;
+      transition: 0.5s;
+    }
+
+    div.ios {
+      width: 50% !important;
+    }
+
+    div.ios2 {
+      width: 20%;
+    }
+
+    div.ios3 {
+      width: 80%;
+    }
+
+    #android {
+      background-color: #708090;
+      height: 100%;
+      padding: auto;
+      float: right;
+      transition: 0.5s;
+    }
+
+    div.android {
+      width: 50% !important;
+    }
+
+    div.android2 {
+      width: 20%;
+    }
+
+    div.android3 {
+      width: 80%;
+    }
+
+    #ios-button {
+      width: 50%;
+      height: 10vmin;
+      height: 10vm;
+      margin-top: calc((100vh - 10vmin) / 2);
+      margin-top: calc((100vh - 10vm) / 2);
+      margin-left: 25%;
+      padding-left: 2vw;
+      border: none;
+      border-radius: 1.5vw;
+      color: white;
+      font-size: 2vw;
+      text-align: left;
+    }
+
+    button.ios-button {
+      background-image: -webkit-linear-gradient(-30deg, #147efb 75%, #023c7e 25%) !important;
+    }
+
+    button.ios-button::before {
+      content: "IOS";
+    }
+
+    button.ios-button::after {
+      font-family: fontAwesome;
+      content: "\f019";
+      padding-left: 16vw !important;
+      transition: 0.5s;
+    }
+
+    button.ios-button:after {
+      font-family: fontAwesome;
+      content: "\f019";
+      padding-left: 16vw !important;
+      transition: 0.5s;
+    }
+
+    button.ios-button2 {
+      background-color: #147efb;
+      width: 10vw !important;
+      height: 10vw !important;
+      border-radius: 50% !important;
+      padding-left: 3vw !important;
+      margin-left: 5vw;
+      margin-top: calc((100% - 10vw) / 2);
+      font-size: 5vw !important;
+    }
+
+    button.ios-button2::before {
+      font-family: fontAwesome;
+      content: "\f179";
+      transition: 0.5s;
+      background-color: #147efb;
+    }
+
+    button.ios-button2:before {
+      font-family: fontAwesome;
+      content: "\f179";
+      transition: 0.5s;
+      background-color: #147efb;
+    }
+
+    #android-button {
+      width: 50%;
+      height: 10vmin;
+      height: 10vm;
+      margin-top: calc((100vh - 10vmin) / 2);
+      margin-top: calc((100vh - 10vm) / 2);
+      margin-left: 25%;
+      padding-left: 2vw;
+      border: none;
+      border-radius: 1.5vw;
+      color: white;
+      font-size: 2vw;
+      text-align: left;
+    }
+
+    button.android-button {
+      background-image: -webkit-linear-gradient(-30deg, #89ab0d 75%, #5f7709 25%);
+    }
+
+    button.android-button::before {
+      content: "Android";
+    }
+
+    button.android-button::after {
+      font-family: fontAwesome;
+      content: "\f019";
+      padding-left: 12vw !important;
+      transition: 0.5s;
+    }
+
+    button.android-button:after {
+      font-family: fontAwesome;
+      content: "\f019";
+      padding-left: 12vw !important;
+      transition: 0.5s;
+    }
+
+    button.android-button2 {
+      background-color: #89ab0d;
+      width: 10vw !important;
+      height: 10vw !important;
+      border-radius: 50% !important;
+      padding-left: 3vw !important;
+      margin-left: 5vw;
+      margin-top: calc((100% - 10vw) / 2);
+      font-size: 5vw !important;
+    }
+
+    button.android-button2::before {
+      font-family: fontAwesome;
+      content: "\f17b";
+      transition: 0.5s;
+      background-color: #89ab0d;
+    }
+
+    button.android-button2:before {
+      font-family: fontAwesome;
+      content: "\f17b";
+      transition: 0.5s;
+      background-color: #89ab0d;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #ios-download-menu {
+      width: 75%;
+      height: 50vmin;
+      height: 50vm;
+      margin-top: calc((100vh - 50vmin) / 2);
+      margin-top: calc((100vh - 50vm) / 2);
+      margin-left: 12.5%;
+      border: none;
+      border-radius: 1.5vw;
+      background-color: #fffafa;
+      color: white;
+      font-size: 2vw;
+      padding: 2%;
+    }
+
+    #android-download-menu {
+      width: 75%;
+      height: 50vmin;
+      height: 50vm;
+      margin-top: calc((100vh - 50vmin) / 2);
+      margin-top: calc((100vh - 50vm) / 2);
+      margin-left: 12.5%;
+      border: none;
+      border-radius: 1.5vw;
+      background-color: #fffafa;
+      color: white;
+      font-size: 2vw;
+      padding: 2%;
+    }
+
+    #close1 {
+      float: right;
+      margin-right: 4%;
+    }
+
+    #close2 {
+      float: right;
+      margin-right: 4%;
+    }
+
+    .close {
+      position: absolute;
+      height: 2.5vw;
+      width: 2.5vw;
+      font-size: 1vw;
+      text-align: center;
+      color: white;
+      border-radius: 50%;
+      border: none;
+      background-color: #d3d3d3;
+    }
+
+    .close:after {
+      content: 'Close';
+      position: absolute;
+      font-size: 1vw;
+      text-align: center;
+      color: #d3d3d3;
+      pointer-events: none;
+      opacity: 0;
+      transition: all .2s cubic-bezier(.67,.13,.1,.81);
+      margin-left: 1.5vw;
+      right: 3vw;
+    }
+
+    .close:hover:after {
+      opacity: 1;
+      right: 3.8vw;
+    }
+
+    img.logos {
+      width: 100%;
+    }
+
+    h4 {
+      color: #d3d3d3;
+      text-align: center;
+      font-family: 'Valera Round', sans-serif;
+      font-weight: 400;
+    }
+
+    .menu-left {
+      float: left;
+      width: 24.3%;
+    }
+
+    .menu-right {
+      padding-left: 30%;
+      color: black;
+    }
+
+    h5 {
+      color: #d3d3d3;
+      margin: 0;
+      font-weight: 400;
+    }
+
+    h3 {
+      margin: 0;
+    }
+
+    .menu-list::before {
+      font-family: fontAwesome;
+      content: "\f061";
+      color: #d3d3d3;
+      padding-left: 4%;
+      padding-right: 3%;
+    }
+
+    @media screen and (max-width: 700px) {
+      #ios {
+        width: 100% !important;
+      }
+      #android {
+        width: 100% !important;
+      }
+      button.android-button::after {
+        font-family: fontAwesome;
+        content: "\f019";
+        padding-left: 35vw !important;
+        transition: 0.5s;
+      }
+      button.android-button:after {
+        font-family: fontAwesome;
+        content: "\f019";
+        padding-left: 35vw !important;
+        transition: 0.5s;
+      }
+      button.ios-button::after {
+        font-family: fontAwesome;
+        content: "\f019";
+        padding-left: 39vw !important;
+        transition: 0.5s;
+      }
+      button.ios-button:after {
+        font-family: fontAwesome;
+        content: "\f019";
+        padding-left: 39vw !important;
+        transition: 0.5s;
+      }
+    }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <img class="logo" src="logo.png" alt="Logo">
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fa fa-home"></i>  Home</a></li>
+          <li class="sub-menu"><a><i class="fa fa-info-circle"></i> About</a>
+            <ul>
+              <li><a href="team.html"><i class="fa fa-users"></i> Team</a></li>
+              <li><a href="product.html"><i class="fas fa-rocket"></i> Product</a></li>
+              <li><a href="#"><i class="far fa-newspaper"></i> News</a></li>
+            </ul>
+          </li>
+          <li><a href="https://interlogical-ye.000webhostapp.com/contact.php"><i class="fa fa-phone"></i> Contact</a></li>
+          <li class="sub-menu"><a><img class="ye" src="ye.png" alt="YE Logo">   Young Enterprise</a>
+            <ul>
+              <li><a href="https://www.young-enterprise.org.uk/"><img class="ye" src="ye.png" alt="YE Logo">   Young Enterprise</a></li>
+              <li><a href="#"><i class="fas fa-shopping-basket"></i> YE Marketplace</a></li>
+            </ul>
+          </li>
+          <li><a class="presentpage"><i class="fa fa-download"></i> App Download</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fa fa-bars" aria-hidden="true" onclick="toggleClass(this)"></i>
+      </div>
+    </header>
+
+    <div id="ios" class="ios ios2 ios3">
+      <button class="ios-button" id="ios-button"></button>
+      <div class="hidden" id="ios-download-menu">
+        <div id="close1">
+          <button class="close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="menu-left">
+          <img class="logos" src="apple-logo.png" alt="Apple logo">
+          <h4>746 kb</h4>
+        </div>
+        <div class="menu-right">
+          <h3>IOS Download</h3>
+          <h5>Version 1.0</h5>
+          <ul>
+            <li class="menu-list">List item number one</li>
+            <li class="menu-list">List item number two</li>
+            <li class="menu-list">List item number three</li>
+            <li class="menu-list">List item number four</li>
+            <li class="menu-list">List item number five</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="android" class="android android2 android3">
+      <button class="android-button" id="android-button"></button>
+      <div class="hidden" id="android-download-menu">
+        <div id="close2">
+          <button class="close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="menu-left">
+          <img class="logos" src="android-logo.png" alt="Apple logo">
+          <h4>746 kb</h4>
+        </div>
+        <div class="menu-right">
+          <h3>Android Download</h3>
+          <h5>Version 1.0</h5>
+          <ul>
+            <li class="menu-list">List item number one</li>
+            <li class="menu-list">List item number two</li>
+            <li class="menu-list">List item number three</li>
+            <li class="menu-list">List item number four</li>
+            <li class="menu-list">List item number five</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section id="social_icon_footer">
+      <div class="container">
+        <div class="text-center center-block">
+          <p><b>Disclaimer:</b> We use a third party service as a directory to our social media accounts. <br> You will be routed to a urlgenius page and then to whatever medium is best suited for your device.</p>
+          <a href="#"><i id="social-fb" class="fab fa-facebook-square fa-3x social"></i></a>
+          <a href="#"><i id="social-tw" class="fab fa-twitter-square fa-3x social"></i></a>
+          <a href="https://urlgeni.us/instagram/Interlogical"><i id="social-ig" class="fab fa-instagram fa-3x social"></i></a>
+          <a href="#"><i id="social-yt" class="fab fa-youtube fa-3x social"></i></a>
+          <a href="#"><i id="social-sc" class="fab fa-snapchat-square fa-3x social"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js.js"></script>
+    <script src="downloadjs.js"></script>
+
+  </body>
+</html>

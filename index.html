@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interlogical Home page</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+    <link rel="stylesheet" type="text/css" href="base.css">
+    <style>
+    h1 {
+      font-weight: 600px;
+      font-size: 6vm;
+      font-size: 6vmin;
+      color: white;
+    }
+
+    h3 {
+      font-size: 2.5vm;
+      font-size: 2.5vmin;
+      color: white;
+    }
+
+    button {
+      padding: 1.25vm;
+      padding: 1.25vmin;
+      background-color: #484848;
+      border: 0.3vm solid #484848;
+      border: 0.3vmin solid #484848;
+      border-radius: 15px;
+      font-size: 2.5vm;
+      font-size: 2.5vmin;
+      color: #a8a8a8;
+      background-image: linear-gradient(45deg, #a8a8a8 50%, transparent 50%);
+      background-position: 100%;
+      background-size: 400%;
+      transition: 1000ms ease-in-out;
+    }
+
+    button:hover, button:hover::after {
+      background-position: 0;
+      color: #484848
+    }
+
+    button::after {
+      font-family: fontAwesome;
+      content: "\f019";
+      color: #a8a8a8;
+      padding: 0.5vm;
+      padding: 0.5vmin;
+      transition: 1000ms ease-in-out;
+    }
+
+    button:hover, button:hover:after {
+      background-position: 0;
+      color: #484848
+    }
+
+    button:after {
+      font-family: fontAwesome;
+      content: "\f019";
+      color: #a8a8a8;
+      padding: 0.5vm;
+      padding: 0.5vmin;
+      transition: 1000ms ease-in-out;
+    }
+
+    .home {
+      height: 100%;
+      width: 100%;
+      display: table;
+    }
+
+    .landing-text {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+    }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <img class="logo" src="logo.png" alt="Logo">
+      <nav>
+        <ul>
+          <li><a class="presentpage"><i class="fa fa-home"></i>  Home</a></li>
+          <li class="sub-menu"><a><i class="fa fa-info-circle"></i> About</a>
+            <ul>
+              <li><a href="team.html"><i class="fa fa-users"></i> Team</a></li>
+              <li><a href="product.html"><i class="fas fa-rocket"></i> Product</a></li>
+              <li><a href="#"><i class="far fa-newspaper"></i> News</a></li>
+            </ul>
+          </li>
+          <li><a href="https://interlogical-ye.000webhostapp.com/contact.php"><i class="fa fa-phone"></i> Contact</a></li>
+          <li class="sub-menu"><a><img class="ye" src="ye.png" alt="YE Logo">   Young Enterprise</a>
+            <ul>
+              <li><a href="https://www.young-enterprise.org.uk/"><img class="ye" src="ye.png" alt="YE Logo">   Young Enterprise</a></li>
+              <li><a href="#"><i class="fas fa-shopping-basket"></i> YE Marketplace</a></li>
+            </ul>
+          </li>
+          <li><a href="download.html"><i class="fa fa-download"></i> App Download</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fa fa-bars" aria-hidden="true" onclick="toggleClass(this)"></i>
+      </div>
+    </header>
+    <div class="home">
+      <div class="landing-text">
+        <h1>Welcome to Interlogical</h1>
+        <h3>Welcome to Interlogical, here we aim to teach people about the next step for man on its journey to space in a fun and encouraging way by utilising Augmented Reality(AR).</h3>
+        <a href="#"><button>Download</button></a>
+      </div>
+    </div>
+    <section id="social_icon_footer">
+      <div class="container">
+        <div class="text-center center-block">
+          <p><b>Disclaimer:</b> We use a third party service as a directory to our social media accounts. <br> You will be routed to a urlgenius page and then to whatever medium is best suited for your device.</p>
+          <a href="#"><i id="social-fb" class="fab fa-facebook-square fa-3x social"></i></a>
+          <a href="#"><i id="social-tw" class="fab fa-twitter-square fa-3x social"></i></a>
+          <a href="https://urlgeni.us/instagram/Interlogical"><i id="social-ig" class="fab fa-instagram fa-3x social"></i></a>
+          <a href="#"><i id="social-yt" class="fab fa-youtube fa-3x social"></i></a>
+          <a href="#"><i id="social-sc" class="fab fa-snapchat-square fa-3x social"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js.js"></script>
+
+  </body>
+</html>
