@@ -186,14 +186,12 @@
 
     #ios-download-menu {
       width: 75%;
-      height: 50vmin;
-      height: 50vm;
-      margin-top: calc((100vh - 50vmin) / 2);
-      margin-top: calc((100vh - 50vm) / 2);
+      height: 24vw;
+      margin-top: calc((100vh - 24vw) / 2);
       margin-left: 12.5%;
       border: none;
       border-radius: 1.5vw;
-      background-color: #fffafa;
+      background-image: linear-gradient(135deg, #fffafa 71.5%, #313636 28.5%);
       color: white;
       font-size: 2vw;
       padding: 2%;
@@ -201,14 +199,12 @@
 
     #android-download-menu {
       width: 75%;
-      height: 50vmin;
-      height: 50vm;
-      margin-top: calc((100vh - 50vmin) / 2);
-      margin-top: calc((100vh - 50vm) / 2);
+      height: 24vw;
+      margin-top: calc((100vh - 24vw) / 2);
       margin-left: 12.5%;
       border: none;
       border-radius: 1.5vw;
-      background-color: #fffafa;
+      background-image: linear-gradient(135deg, #fffafa 71.5%, #313636 28.5%);
       color: white;
       font-size: 2vw;
       padding: 2%;
@@ -283,6 +279,12 @@
 
     h3 {
       margin: 0;
+      color: #313636;
+    }
+
+    .menu-list {
+      font-size: 1.5vw;
+      color: #888;
     }
 
     .menu-list::before {
@@ -291,6 +293,32 @@
       color: #d3d3d3;
       padding-left: 4%;
       padding-right: 3%;
+      font-size: 1.5vw;
+    }
+
+    div.download-button {
+      border: 0.2vw solid #00cffc;
+      border-radius: 5vw;
+      width: 18vw;
+      height: 4vw;
+      float: right;
+      color: #aaa;
+      padding: 0.55vw 0.6vw;
+
+    }
+
+    .download-icon {
+      color: #00cffc;
+      font-size: 2.5vw;
+    }
+
+    .download-icon::after {
+      content: "Download";
+      margin-left: 1vw;
+      font-family: 'Valera Round', sans-serif;
+      font-weight: 400;
+      font-size: 2.5vw;
+      color: #fffafa;
     }
 
     @media screen and (max-width: 700px) {
@@ -377,6 +405,11 @@
             <li class="menu-list">List item number five</li>
           </ul>
         </div>
+        <a href="#">
+          <div class="download-button">
+            <i class="download-icon fas fa-arrow-circle-down"></i>
+          </div>
+        </a>
       </div>
     </div>
     <div id="android" class="android android2 android3">
@@ -400,6 +433,11 @@
             <li class="menu-list">List item number five</li>
           </ul>
         </div>
+        <a href="#">
+          <div class="download-button">
+            <i class="download-icon fas fa-arrow-circle-down"></i>
+          </div>
+        </a>
       </div>
     </div>
 
