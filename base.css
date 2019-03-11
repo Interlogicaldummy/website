@@ -27,7 +27,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
   background-color: #999;
   font-family: 'Varela Round', sans-serif;
 }
@@ -225,6 +224,17 @@ img.ye {
   background-color: #666;
 }
 
+@media screen and (max-width: 700px) {
+  body {
+    background-image: url(mbackground1.png);
+    background-repeat: repeat !important;
+  }
+}
+@media screen and (min-width: 700px) {
+  body {
+    background-size: cover;
+  }
+}
 @media (max-width: 850px) {
   header {
     padding: 0 2vh;
