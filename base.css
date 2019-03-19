@@ -23,12 +23,21 @@ html {
 body {
   margin: 0 auto;
   padding-top: 85px;
-  background-image: url(background.png);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #999;
   font-family: 'Varela Round', sans-serif;
+}
+
+header.nav-after {
+  background-color: #fffafa;
+  -moz-box-shadow:0 1vmin 1vmin rgba(105, 105, 105, 0.75);
+  -webkit-box-shadow: 0 1vmin 1vmin rgba(105, 105, 105, 0.75);
+  box-shadow: 0 1vmin 1vmin rgba(105, 105, 105, 0.75);
+  -moz-box-shadow:0 1vm 1vm rgba(105, 105, 105, 0.75);
+  -webkit-box-shadow: 0 1vm 1vm rgba(105, 105, 105, 0.75);
+  box-shadow: 0 1vm 1vm rgba(105, 105, 105, 0.75);
 }
 
 header {
@@ -40,8 +49,8 @@ header {
   padding-left: 2vh;
   width: 100%;
   box-sizing: border-box;
-  background-color: #666;
-  border-bottom: 0.25vw solid #0365aa;
+  background: transparent;
+  transition: 0.3s;
 }
 
 header nav {
@@ -64,7 +73,7 @@ header nav ul li.sub-menu:before {
   font-family: fontAwesome;
   position: absolute;
   line-height: 50px;
-  color: #fff;
+  color: #696969;
   right: 1px;
 }
 
@@ -75,8 +84,21 @@ header nav ul li.active.sub-menu:before {
 header nav ul li ul {
   position: absolute;
   left: 0;
-  background: #666;
-  display: none
+  background: transparent;
+  display: none;
+  transition: 0.3s;
+}
+
+header nav ul li ul.sub-aft {
+  background: #696969;
+}
+
+header nav ul li ul a {
+  color: #696969;
+}
+
+header nav ul li ul a.sub-a-aft {
+  color: #fffafa;
 }
 
 header nav ul li.active ul {
@@ -92,13 +114,16 @@ header nav ul li a {
   height: 50px;
   line-height: 50px;
   padding: 0 20px;
-  color: #fff;
+  color: #696969;
   text-decoration: none;
   display: block;
 }
 
 header nav ul li a:hover {
-  color: #fff;
+  background: #ccc;
+}
+
+header nav ul li ul a.sub-a-aft:hover {
   background: #333;
 }
 
@@ -133,8 +158,12 @@ img.ye {
   line-height: 50px;
 }
 
+.ye-sub {
+  filter: brightness(0) invert(1);
+}
+
 .menu-toggle {
-  color: #fff;
+  color: #fffafa;
   float: right;
   line-height: 50px;
   font-size: 24px;
@@ -144,12 +173,13 @@ img.ye {
 
 .presentpage:not(.active){
   background-color: #0365aa;
+  color: #fffafa;
 }
 
 #social_icon_footer {
   background-color: #333;
   bottom: 0;
-  padding: 0 !important;
+  padding: 1vw !important;
   margin: 0 !important;
 }
 
@@ -224,52 +254,60 @@ img.ye {
   background-color: #666;
 }
 
-@media screen and (max-width: 700px) {
-  body {
-    background-image: url(mbackground1.png);
-    background-repeat: repeat !important;
-  }
-}
 @media screen and (min-width: 700px) {
   body {
     background-size: cover;
   }
 }
-@media (max-width: 850px) {
+
+@media screen and (max-width: 850px) {
   header {
     padding: 0 2vh;
-    background-color: #666;
   }
+
   header nav {
     position: absolute;
-    top: 50px;
+    top: 0;
     left: -100%;
     width: 100%;
-    height: calc(100vh - 50px);
-    background: #4d4d4d;
+    height: calc(100vh);
+    background: #a8a8a8;
     transition: 0.5s;
     z-index: 10;
   }
+
   header nav.active {
     left: 0;
   }
+
   header nav ul {
     display: block;
     text-align: center;
   }
+
   header nav ul li a {
     border-bottom: 0.9px solid rgba(0, 0, 0, 0.2);
   }
+
   header nav ul li.active ul {
     position: relative;
-    background: #666;
+    background: #dedede;
   }
+
   header nav ul li ul li {
     width: 100%;
   }
+
   .menu-toggle {
     display: block;
+    height: 50px;
   }
+
+  img.logo {
+    width: auto;
+    height: 100%;
+  }
+
   #social_icon_footer a {
     font-size: 2vmax !important;
   }
@@ -278,6 +316,13 @@ img.ye {
     font-size: 1.5vmax !important;
   }
 }
+
+@media screen and (min-width:850px) {
+  .mnav {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1400px) {
   header {
     padding: 0;
@@ -287,21 +332,26 @@ img.ye {
     line-height: 5vw;
     font-size: 1.5vw;
   }
+
   header nav ul li a{
     height: 5vw;
     line-height: 5vw;
     padding-right: 2vw;
   }
+
   header nav ul li.sub-menu:before {
     line-height: 5vw;
   }
+
   header nav ul li ul li {
     display: block;
     width: 20vw;
   }
+
   img.ye {
     height: 2vw;
   }
+
   .ye{
     line-height: 5vw;
   }

@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
     <link rel="stylesheet" type="text/css" href="base.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <style>
+    body {
+      background-image: url(background.png);
+    }
+
     h2 {
       color: #ccc;
     }
@@ -65,62 +70,73 @@
         display: block;
         height: auto;
       }
+
       .card {
         height: auto;
       }
     }
-    @media screen and (min-width: 950px){
-      .column {
-        width: 25%;
-        display: block;
-        height: auto;
-      }
-      .card {
-        height: 37em;
-      }
-    }
-    @media screen and (min-width: 1425px){
-      .column {
-        width: calc(100% / 6);
-        display: block;
-        height: auto;
-      }
-      .card {
-        height: 37em;
-      }
-    }
-    @media screen and (min-width: 2075px){
-      .card {
-        height: 67em;
-      }
-      p {
-        font-size: 1.7em;
-      }
-      h2 {
-        font-size: 3em;
-      }
-      .toptitle {
-        font-size: 4em;
-      }
-    }
+
     @media screen and (max-width: 700px) {
       body {
         background-image: url(mbackground1.png);
         background-repeat: repeat !important;
       }
     }
+
+    @media screen and (min-width: 950px){
+      .column {
+        width: 25%;
+        display: block;
+        height: auto;
+      }
+
+      .card {
+        height: 37em;
+      }
+    }
+
+    @media screen and (min-width: 1425px){
+      .column {
+        width: calc(100% / 6);
+        display: block;
+        height: auto;
+      }
+
+      .card {
+        height: 37em;
+      }
+    }
+
+    @media screen and (min-width: 2075px){
+      .card {
+        height: 67em;
+      }
+
+      p {
+        font-size: 1.7em;
+      }
+
+      h2 {
+        font-size: 3em;
+      }
+
+      .toptitle {
+        font-size: 4em;
+      }
+    }
     </style>
   </head>
   <body>
 
-    <header>
-      <img class="logo" src="logo.png" alt="Logo">
+    <header id="navbar">
+      <img class="logo" src="favicon.png" alt="Logo">
       <nav>
         <ul>
-          <li><a href="index.html"><i class="fa fa-home"></i>  Home</a></li>
-          <li class="sub-menu"><a class="presentpage"><i class="fa fa-info-circle"></i> About</a>
+          <li class="mnav"><a style="background-color: #ccc;"><img style="float: left;" class="logo" src="favicon.png" alt="Logo"><div class="menu-toggle"><i style="text-align: right; color: #696969;" class="fas fa-times" aria-hidden="true"></i></div></a></li>
+          <li><a class="presentpage"><i class="fa fa-home"></i>  Home</a></li>
+          <li class="sub-menu"><a><i class="fa fa-info-circle"></i> About</a>
             <ul>
-              <li><a class="presentpage"><i class="fa fa-users"></i> Team</a></li>
+              <li><a href="team.html"><i class="fa fa-users"></i> Team</a></li>
               <li><a href="product.html"><i class="fas fa-rocket"></i> Product</a></li>
               <li><a href="#"><i class="far fa-newspaper"></i> News</a></li>
             </ul>
@@ -128,7 +144,7 @@
           <li><a href="https://interlogical-ye.000webhostapp.com/contact.php"><i class="fa fa-phone"></i> Contact</a></li>
           <li class="sub-menu"><a><img class="ye" src="ye.png" alt="YE Logo">   Young Enterprise</a>
             <ul>
-              <li><a href="https://www.young-enterprise.org.uk/"><img class="ye" src="ye.png" alt="YE Logo">   Young Enterprise</a></li>
+              <li><a href="https://www.young-enterprise.org.uk/"><img class="ye" id="ye-sub" src="ye.png" alt="YE Logo">   Young Enterprise</a></li>
               <li><a href="#"><i class="fas fa-shopping-basket"></i> YE Marketplace</a></li>
             </ul>
           </li>
@@ -136,7 +152,7 @@
         </ul>
       </nav>
       <div class="menu-toggle">
-        <i class="fa fa-bars" aria-hidden="true" onclick="toggleClass(this)"></i>
+        <i style="color: #696969;" class="fa fa-bars" aria-hidden="true"></i>
       </div>
     </header>
 
