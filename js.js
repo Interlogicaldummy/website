@@ -21,7 +21,7 @@ window.onscroll = function() {
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("navbar").style.top = "0";
     } else {
-      document.getElementById("navbar").style.top = "-5vw";
+      document.getElementById("navbar").style.top = "-20vw";
     }
     prevScrollpos = currentScrollPos;
   }
@@ -30,15 +30,19 @@ window.onscroll = function() {
 $(window).on("scroll", function() {
       if($(window).scrollTop()) {
             $('header').addClass('nav-after');
+            $('header nav ul li a').addClass('menu-aft');
+            $('header nav ul li').addClass('sub-menu-aft');
             $('header nav ul li ul').addClass('sub-aft');
             $('header nav ul li ul a').addClass('sub-a-aft');
-            $('#ye-sub').addClass('ye-sub');
+            $('#ye-main').removeClass('ye-main');
       }
 
       else {
             $('header').removeClass('nav-after');
+            $('header nav ul li a').removeClass('menu-aft');
+            $('header nav ul li').removeClass('sub-menu-aft');
             $('header nav ul li ul').removeClass('sub-aft');
             $('header nav ul li ul a').removeClass('sub-a-aft');
-            $('#ye-sub').removeClass('ye-sub');
+            $('#ye-main').addClass('ye-main');
       }
 })

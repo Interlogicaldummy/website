@@ -31,7 +31,7 @@ body {
 }
 
 header.nav-after {
-  background-color: #fffafa;
+  background-color: #fff;
   -moz-box-shadow:0 1vmin 1vmin rgba(105, 105, 105, 0.75);
   -webkit-box-shadow: 0 1vmin 1vmin rgba(105, 105, 105, 0.75);
   box-shadow: 0 1vmin 1vmin rgba(105, 105, 105, 0.75);
@@ -50,7 +50,7 @@ header {
   width: 100%;
   box-sizing: border-box;
   background: transparent;
-  transition: 0.3s;
+  transition: 0.8s;
 }
 
 header nav {
@@ -73,8 +73,15 @@ header nav ul li.sub-menu:before {
   font-family: fontAwesome;
   position: absolute;
   line-height: 50px;
-  color: #696969;
+  color: #fff;
   right: 1px;
+}
+
+header nav ul li.sub-menu-aft.sub-menu:before {
+  content: '\f078';
+  font-family: fontAwesome;
+  position: absolute;
+  color: #696969;
 }
 
 header nav ul li.active.sub-menu:before {
@@ -94,11 +101,11 @@ header nav ul li ul.sub-aft {
 }
 
 header nav ul li ul a {
-  color: #696969;
+  color: #fff;
 }
 
 header nav ul li ul a.sub-a-aft {
-  color: #fffafa;
+  color: #fff;
 }
 
 header nav ul li.active ul {
@@ -110,16 +117,26 @@ header nav ul li ul li {
   width: 200px;
 }
 
-header nav ul li a {
-  height: 50px;
-  line-height: 50px;
-  padding: 0 20px;
+header nav ul li a.menu-aft {
   color: #696969;
   text-decoration: none;
   display: block;
 }
 
+header nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
 header nav ul li a:hover {
+  background: #696969;
+}
+
+header nav ul li a.menu-aft:hover {
   background: #ccc;
 }
 
@@ -162,8 +179,12 @@ img.ye {
   filter: brightness(0) invert(1);
 }
 
+.ye-main {
+  filter: brightness(0) invert(1);
+}
+
 .menu-toggle {
-  color: #fffafa;
+  color: #fff;
   float: right;
   line-height: 50px;
   font-size: 24px;
@@ -173,7 +194,7 @@ img.ye {
 
 .presentpage:not(.active){
   background-color: #0365aa;
-  color: #fffafa;
+  color: #fff;
 }
 
 #social_icon_footer {
@@ -327,14 +348,13 @@ img.ye {
   header {
     padding: 0;
     padding-left: 2vw;
-    background-color: #666;
     height: 5vw;
     line-height: 5vw;
     font-size: 1.5vw;
   }
 
   header nav ul li a{
-    height: 5vw;
+    height: 100%;
     line-height: 5vw;
     padding-right: 2vw;
   }
