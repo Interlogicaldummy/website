@@ -77,7 +77,7 @@ header nav ul li.sub-menu:before {
   right: 1px;
 }
 
-header nav ul li.sub-menu-aft.sub-menu:before {
+header nav ul li.sub-menu-aft.sub-menu:before:not(.presentpage) {
   content: '\f078';
   font-family: fontAwesome;
   position: absolute;
@@ -194,7 +194,7 @@ img.ye {
 
 .presentpage:not(.active){
   background-color: #0365aa;
-  color: #fff;
+  color: #fff !important;
 }
 
 #social_icon_footer {
