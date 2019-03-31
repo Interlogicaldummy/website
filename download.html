@@ -327,37 +327,324 @@
         width: 100% !important;
       }
 
+      div.ios2 {
+        height: 30% !important;
+
+      }
+
+      div.ios3 {
+        height: 70% !important;
+      }
+
+      div.ios {
+        height: 50% !important;
+      }
+
       #android {
         width: 100% !important;
       }
 
-      button.android-button::after {
-        font-family: fontAwesome;
-        content: "\f019";
-        padding-left: 35vw !important;
-        transition: 0.5s;
+      div.android2 {
+        height: 30% !important;
+
       }
 
-      button.android-button:after {
-        font-family: fontAwesome;
-        content: "\f019";
-        padding-left: 35vw !important;
-        transition: 0.5s;
+      div.android3 {
+        height: 70% !important;
+      }
+
+      div.android {
+        height: 50% !important;
+      }
+
+      #ios-button {
+        width: 50%;
+        height: 10vmin;
+        height: 10vm;
+        margin-top: calc((50vh - 10vmin) / 2);
+        margin-top: calc((50vh - 10vm) / 2);
+        margin-left: 25%;
+        padding-left: 2vw;
+        border: none;
+        border-radius: 1.5vw;
+        color: white;
+        font-size: 3.5vw;
+        text-align: left;
+      }
+
+      button.ios-button {
+        background-image: linear-gradient(90deg, #147efb 75%, #023c7e 25%) !important;
+      }
+
+      button.ios-button::before {
+        content: "IOS";
       }
 
       button.ios-button::after {
         font-family: fontAwesome;
         content: "\f019";
-        padding-left: 39vw !important;
+        padding-left: 35vw !important;
         transition: 0.5s;
       }
 
       button.ios-button:after {
         font-family: fontAwesome;
         content: "\f019";
-        padding-left: 39vw !important;
+        padding-left: 35vw !important;
         transition: 0.5s;
       }
+
+      button.ios-button2 {
+        width: 50% !important;
+        height: 10vmin !important;
+        height: 10vm !important;
+        margin-top: calc((30vh - 10vmin) / 2) !important;
+        margin-top: calc((30vh - 10vm) / 2) !important;
+        margin-left: 25%;
+        padding-left: 2vw !important;
+        border: none;
+        border-radius: 1.5vw !important;
+        color: white;
+        font-size: 3.5vw !important;
+        text-align: left;
+        background-image: linear-gradient(90deg, #147efb 75%, #023c7e 25%) !important;
+      }
+
+      button.ios-button2::before {
+        content: "IOS";
+        font-family: 'Varela Round', sans-serif !important;
+      }
+
+      button.ios-button2::after {
+        font-family: fontAwesome;
+        content: "\f019";
+        padding-left: 35vw !important;
+        transition: 0.5s;
+      }
+
+      button.ios-button2:after {
+        font-family: fontAwesome;
+        content: "\f019";
+        padding-left: 35vw !important;
+        transition: 0.5s;
+      }
+
+      #android-button {
+        width: 50%;
+        height: 10vmin;
+        height: 10vm;
+        margin-top: calc((50vh - 10vmin) / 2);
+        margin-top: calc((50vh - 10vm) / 2);
+        margin-left: 25%;
+        padding-left: 2vw;
+        border: none;
+        border-radius: 1.5vw;
+        color: white;
+        font-size: 3.5vw;
+        text-align: left;
+      }
+
+      button.android-button {
+        background-image: linear-gradient(90deg, #89ab0d 75%, #5f7709 25%) !important;
+      }
+
+      button.android-button::before {
+        content: "Android";
+      }
+
+      button.android-button::after {
+        font-family: fontAwesome;
+        content: "\f019";
+        padding-left: 28vw !important;
+        transition: 0.5s;
+      }
+
+      button.android-button:after {
+        font-family: fontAwesome;
+        content: "\f019";
+        padding-left: 28vw !important;
+        transition: 0.5s;
+      }
+
+      button.android-button2 {
+        width: 50% !important;
+        height: 10vmin !important;
+        height: 10vm !important;
+        margin-top: calc((30vh - 10vmin) / 2) !important;
+        margin-top: calc((30vh - 10vm) / 2) !important;
+        margin-left: 25%;
+        padding-left: 2vw !important;
+        border: none;
+        border-radius: 1.5vw !important;
+        color: white;
+        font-size: 3.5vw !important;
+        text-align: left;
+        background-image: linear-gradient(90deg, #89ab0d 75%, #5f7709 25%) !important;
+      }
+
+      button.android-button2::before {
+        content: "Android";
+        font-family: 'Varela Round', sans-serif !important;
+      }
+
+      button.android-button2::after {
+        font-family: fontAwesome;
+        content: "\f019";
+        padding-left: 28vw !important;
+        transition: 0.5s;
+      }
+
+      button.android-button2:after {
+        font-family: fontAwesome;
+        content: "\f019";
+        padding-left: 28vw !important;
+        transition: 0.5s;
+      }
+
+      #ios-download-menu {
+        width: 75%;
+        height: 75%;
+        margin-top: 12.5%;
+        margin-left: 12.5%;
+        border: none;
+        border-radius: 1.5vw;
+        background-image: linear-gradient(160deg, #fffafa 67.5%, #313636 32.5%);
+        color: white;
+        font-size: 2vw;
+        padding: 2%;
+      }
+
+      #android-download-menu {
+        width: 75%;
+        height: 75%;
+        margin-top: 12.5%;
+        margin-left: 12.5%;
+        border: none;
+        border-radius: 1.5vw;
+        background-image: linear-gradient(160deg, #fffafa 67.5%, #313636 32.5%);
+        color: white;
+        font-size: 2vw;
+        padding: 2%;
+      }
+
+      #close1 {
+        float: right;
+        margin-right: 4%;
+      }
+
+      #close2 {
+        float: right;
+        margin-right: 4%;
+      }
+
+      .close {
+        position: absolute;
+        height: 2.5vh;
+        width: 2.5vh;
+        font-size: 2vh;
+        text-align: center;
+        color: white;
+        border-radius: 50%;
+        border: none;
+        background-color: #d3d3d3;
+      }
+
+      .close:after {
+        content: 'Close';
+        position: absolute;
+        font-size: 2vh;
+        text-align: center;
+        color: #d3d3d3;
+        pointer-events: none;
+        opacity: 0;
+        transition: all .2s;
+        right: 3vw;
+      }
+
+      .close:hover:after {
+        opacity: 1;
+        right: 0;
+      }
+
+      .close i {
+        margin-right: 2vw;
+      }
+
+      img.logos {
+        width: 100%;
+      }
+
+      h4 {
+        color: #d3d3d3;
+        text-align: center;
+        font-family: 'Valera Round', sans-serif;
+        font-weight: 400;
+        font-size: 3vh;
+      }
+
+      .menu-left {
+        float: left;
+        width: 24.3%;
+      }
+
+      .menu-right {
+        padding-left: 30%;
+        color: black;
+      }
+
+      h5 {
+        font-size: 2.5vh;
+        color: #d3d3d3;
+        margin: 0;
+        font-weight: 400;
+      }
+
+      h3 {
+        font-size: 3.5vh;
+        margin: 0;
+        color: #313636;
+      }
+
+      .menu-list {
+        font-size: 1.5vh;
+        color: #888;
+      }
+
+      .menu-list::before {
+        font-family: fontAwesome;
+        content: "\f061";
+        color: #d3d3d3;
+        padding-left: 4%;
+        padding-right: 3%;
+        font-size: 1.5vh;
+      }
+
+      div.download-button {
+        border: 0.2vw solid #00cffc;
+        border-radius: 5vw;
+        width: 65%;
+        height: 10%;
+        float: left;
+        color: #aaa;
+        padding: 0;
+      }
+
+      .download-icon {
+        color: #00cffc;
+        font-size: 4vh;
+        margin-top: 0vh;
+        margin-left: 0.2vh;
+      }
+
+      .download-icon::after {
+        content: "Download";
+        margin-left: 2vw;
+        font-family: 'Valera Round', sans-serif;
+        font-weight: 400;
+        font-size: 4.5vh;
+        color: #313636;
+      }
+
     }
 
     header nav ul li.sub-menu-aft.sub-menu:before {
